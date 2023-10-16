@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-p-_o7oan(p4w#8=y&n_l3jsv*j%bxn@(q2y12dib0d=67kn0(t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mtg.yurtema.duckdns.org', '192.168.1.42']
 
 
 # Application definition
