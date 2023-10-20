@@ -1,8 +1,58 @@
-{% extends 'main/layout.html' %}
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+    <title>Main page</title>
+</head>
+<body>
+    <div class = "header">
+    	<h1>Мероприятия твоего города</h1>
+    	<img src="1.png" class = "ft">
+    	<div class = "lk">
+    		<a href="">Личный кабинет</a>
+    	</div>
+    	<img src="2.png" class = "sd">
+    	<div class="town">
+    	<a href="">Город</a>
+    	</div>
+    </div>
+    <img src="logo.png" class = "logo">
+    <div class="search">
 
-{% block title %}Главная страница{% endblock %}
+    	<img src="lupa.png" class="td">
+    	<a href="">Введите название мероприятия</a>
+    </div>
 
-{% block content %}
-    <h1>Начало</h1>
-    <p>Начало</p>
-{% endblock %}
+    <div class = "menu">
+    	<h2>Категории:</h2>
+
+    	<li>
+    		<div class = "chs"><a href="">Персональный фильтр</a></div>
+    		<br>
+    		<div class="chs1"><a href="">Для детей</a></div>
+    		<br>
+    		<div class = "chs1"><a href="">Кино</a></div>
+    		<br>
+    		<div class="chs1"><a href="">Театр</a></div>
+    		<br>
+    		<div class = "chs1"><a href="">Выставки</a></div>
+    		<br>
+    		<div class = "chs1"><a href="">Концерты</a></div>
+    		<br>
+    		<div class = "chs1"><a href="">Другое</a></div>
+    	</li>
+    </div>
+    <div class="main">
+    	<img src="rek.png" class="rek">
+    </div>
+</body>
+</html>
