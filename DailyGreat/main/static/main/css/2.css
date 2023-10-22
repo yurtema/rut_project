@@ -75,7 +75,7 @@ h2{
 
 }
 .header a:hover{
-  background-color: #FBDCC0;
+  background-color: #8C8686;
   color: black;
   cursor: pointer;
   transition: 1s;
@@ -140,7 +140,7 @@ li{
   padding: 8px 15px;
 }
 .menu a:hover{
-  background-color: #FBDCC0;
+  background-color: #8C8686;
   color: black;
   cursor: pointer;
   transition: 1s;
