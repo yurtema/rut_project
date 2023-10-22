@@ -50,7 +50,7 @@ h2{
 .town{
 	width: 104px;
 	height: 35px;
-	background-color: #A9A9A9;
+	background-color: #E2D5D5;
 	text-align: center;
 	border-radius: 20px;
 	padding-top: 2px;
@@ -58,14 +58,14 @@ h2{
 .lk{
 	width: 225px;
 	height: 35px;
-	background-color: #A9A9A9;
+	background-color: #E2D5D5;
 	text-align: center;
 	border-radius: 20px;
 	padding-top: 2px;
 }
 
 .header a{
-	background-color: #A9A9A9;
+	background-color: #E2D5D5;
 	color: black;
 	font-weight: 500;
 	font-size: 23px;
@@ -102,7 +102,7 @@ li{
 	text-align: center;
 }
 .menu a{
-	background-color: #A9A9A9;
+	background-color: #E2D5D5;
 	color: black;
 	font-weight: 500;
 	font-size: 23px;
