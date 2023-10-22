@@ -12,9 +12,10 @@
 	height: 50px;
 	align-items: center;
 	border: 3px solid #977070;
+	z-index: 99;
 }
 h1{
-font-size: 22px;
+font-size: 25px;
 font-weight: 600;
 line-height: 27px;
 letter-spacing: 0em;
@@ -33,13 +34,6 @@ h2{
 	margin-left: 625.5px;
 	padding-right: 10px;
 }
-a{
-	color: black;
-	font-weight: 600;
-	font-size: 22px;
-	cursor: pointer;
-	border-radius: 20px;
-}
 .sd{
 	padding-left: 50px;
 	width: 31px;
@@ -49,8 +43,8 @@ a{
 .td{
 	width: 42px;
 	height: 42px;
-	padding-top:5px;
-	padding-left: 20px;
+	padding-top: 7px;
+	padding-left: 15px;
 
 }
 .town{
@@ -59,6 +53,7 @@ a{
 	background-color: #A9A9A9;
 	text-align: center;
 	border-radius: 20px;
+	padding-top: 2px;
 }
 .lk{
 	width: 225px;
@@ -66,7 +61,25 @@ a{
 	background-color: #A9A9A9;
 	text-align: center;
 	border-radius: 20px;
+	padding-top: 2px;
 }
+
+.header a{
+	background-color: #A9A9A9;
+	color: black;
+	font-weight: 500;
+	font-size: 23px;
+	cursor: pointer;
+	border-radius: 20px;
+	padding: 7px 14px;
+
+}
+.header a:hover{
+  background-color: #FBDCC0;
+  color: black;
+  cursor: pointer;
+  transition: 1s;
+ }
 .logo{
 	padding-top: 78px;
 	padding-left: 140px;
@@ -75,38 +88,34 @@ a{
 }
 .menu{
 	width: 314px;
-	height: 500px;
+	height: 550px;
 	margin-top:57px;
 	margin-left: 29px;
 	text-align: center;
 	background-color: #00000021;
 	border-radius: 30px;
 	position: absolute;
-
+	z-index:100;
 }
 li{
 	padding-top: 20px;
-	padding-left: 10px;
+	text-align: center;
 }
-.chs{
+.menu a{
 	background-color: #A9A9A9;
-	width: 296px;
-	height: 32px;
+	color: black;
+	font-weight: 500;
+	font-size: 23px;
+	cursor: pointer;
 	border-radius: 20px;
-}
-.chs1{
-	background-color: #A9A9A9;
-	width: 200px;
-	height: 32px;
-	border-radius: 20px;
-	margin-left: 50px;
+
 }
 .search{
 	width:600px;
 	height:62px;
 	float: right;
 	margin-right: 350px;
-	margin-top: 60px;
+	margin-top: 100px;
 	background-color: #FBDCC0;
 	display: flex;
 	align-items: center;
@@ -114,6 +123,8 @@ li{
 }
 .search a{
 	padding-left: 30px;
+	color: grey;
+	cursor: text;
 
 }
 .main{
@@ -124,3 +135,124 @@ li{
 	width: 878px;
 	height: 450px;
 }
+.menu a{
+  color: black ;
+  padding: 8px 15px;
+}
+.menu a:hover{
+  background-color: #FBDCC0;
+  color: black;
+  cursor: pointer;
+  transition: 1s;
+ }
+.carousel-wrapper {
+  overflow: hidden;
+  width: 1000px;
+  padding-left: 450px;
+  margin-top: 50px;
+  position: absolute;
+}
+.carousel-wrapper * {
+  box-sizing: border-box;
+}
+.carousel {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.carousel__photo {
+  opacity: 0;
+  position: absolute;
+  top:0;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+.carousel__photo.initial,
+.carousel__photo.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.carousel__photo.prev,
+.carousel__photo.next {
+  z-index: 800;
+}
+
+.carousel__photo.prev {
+  transform: translateX(-100%);
+}
+
+.carousel__photo.next {
+  transform: translateX(100%);
+}
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top:50%;
+  width: 3rem;
+  height: 3rem;
+  transform: translateY(-50%);
+  
+  cursor: pointer; 
+  z-index: 1001;
+}
+
+.carousel__button--prev {
+  left:0;
+}
+
+.carousel__button--next {
+  right:0;
+}
+
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.footer{
+	padding-top: 80px;
+	width: 100%;
+	height: 89px;
+	top: 935px;
+	background: #EEE3E3;
+	position: absolute;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 100;
+}
+.footer a{
+	color: black;
+	margin-right: 30px;
+	text-align: center;
+}
+.footer a:hover{
+  color: black;
+  cursor: pointer;
+  border-bottom: 1px dashed black;
+ }
+ .cld{
+ 	float: right;
+ 	margin-left: 400px;
+ 	width: 189px;
+ 	height: 22px;
+ 	background-color: #FBDCC0;
+ 	text-align: center;
+
+ }
