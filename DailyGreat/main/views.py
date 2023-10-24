@@ -5,3 +5,6 @@ def index(request):
 
 def about(request):
     return render(request, 'main/about.html')
+
+def child(request):
+    return render(request, 'main/child.html')
