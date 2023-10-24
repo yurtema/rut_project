@@ -21,12 +21,12 @@
     	<div class = "lk">
     		<a href="">Личный кабинет</a>
     	</div>
-    	<a href = '{% urls 'home' %}'><img src="{% static 'main/img/2.png' %}" class = "sd"></a>
+    	<img src="{% static 'main/img/2.png' %}" class = "sd">
     	<div class="town">
     	<a href="">Город</a>
     	</div>
     </div>
-    <img src="{% static 'main/img/LOGO.jpg' %}" class = "logo">
+    <a href = '{% url 'home' %}'><img src="{% static 'main/img/LOGO.jpg' %}" class = "logo"></a>
     <div class="search">
 
     	<img src="{% static 'main/img/lupa.png' %}" class="td">
