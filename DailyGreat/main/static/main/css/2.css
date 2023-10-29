@@ -6,10 +6,13 @@
   text-decoration: none;
 
  }
+ body{
+ 	background-color: #f8ECEC;
+ }
 .header{
 	display: flex;
 	width: 100%;
-	height: 50px;
+	height: 75px;
 	align-items: center;
 	border: 3px solid #977070;
 	z-index: 99;
@@ -50,7 +53,7 @@ h2{
 .town{
 	width: 104px;
 	height: 35px;
-	background-color: #B5ABB1;
+	background-color: #A9A9A9;
 	text-align: center;
 	border-radius: 20px;
 	padding-top: 2px;
@@ -58,14 +61,14 @@ h2{
 .lk{
 	width: 225px;
 	height: 35px;
-	background-color: #B5ABB1;
+	background-color: #A9A9A9;
 	text-align: center;
 	border-radius: 20px;
 	padding-top: 2px;
 }
 
 .header a{
-	background-color: #B5ABB1;
+	background: rgba(218, 203, 203, 1);
 	color: black;
 	font-weight: 500;
 	font-size: 23px;
@@ -75,16 +78,22 @@ h2{
 
 }
 .header a:hover{
-  background-color: #8C8686;
+  background: rgba(251, 220, 192, 1);
   color: black;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
+ }
+ .block2{
+ 	display: flex;
+ 	align-items: center;
+
  }
 .logo{
 	padding-top: 78px;
 	padding-left: 140px;
 	width: 78px;
 	height: 78px;
+	cursor: pointer;
 }
 .menu{
 	width: 314px;
@@ -92,7 +101,7 @@ h2{
 	margin-top:57px;
 	margin-left: 29px;
 	text-align: center;
-	background-color: #C4BBBF;
+	background: rgba(238, 227, 227, 1);
 	border-radius: 30px;
 	position: absolute;
 	z-index:100;
@@ -102,7 +111,7 @@ li{
 	text-align: center;
 }
 .menu a{
-	background-color: #B5ABB1;
+	background-color: rgba(218, 203, 203, 0.6);
 	color: black;
 	font-weight: 500;
 	font-size: 23px;
@@ -111,15 +120,14 @@ li{
 
 }
 .search{
-	width:600px;
+	width: 50%;
 	height:62px;
-	float: right;
-	margin-right: 350px;
 	margin-top: 100px;
-	background-color: #FBDCC0;
+	background: rgba(251, 220, 192, 1);
 	display: flex;
 	align-items: center;
 	border-radius: 30px;
+	margin-left: 20%;
 }
 .search a{
 	padding-left: 30px;
@@ -127,9 +135,52 @@ li{
 	cursor: text;
 
 }
-.main{
-	margin-top: 75px;
-	margin-left: 490px;
+.cal{
+	width: 15%; 
+	height: 62px;
+	top: 94px;
+	border-radius: 20px;
+	background: rgba(251, 220, 192, 1);
+	display: flex;
+	margin-top: 100px;
+	margin-left: 6%;
+	align-items: center;
+	cursor: pointer;
+}
+.cal a{
+	padding-left: 33%;
+	color: black;
+	font-weight: 600;
+	font-size: 18px;
+}
+.cal:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: 0.5s;
+}
+.block3{
+	display: flex;
+}
+.buy{
+	width: 10%;
+	height: 45px;
+	margin-top: 39%;
+	margin-left: 36%;
+	background: rgba(251, 220, 192, 1);
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	padding-left: 32px;
+	font-weight: 600;
+	font-size: 18px;
+	cursor: pointer;
+
+}
+.buy a{
+	color: black;
+}
+.buy:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: 0.5s;
 }
 .rek{
 	width: 878px;
@@ -140,10 +191,10 @@ li{
   padding: 8px 15px;
 }
 .menu a:hover{
-  background-color: #8C8686;
+  background-color: rgba(251, 220, 192, 1);
   color: black;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
  }
 .carousel-wrapper {
   overflow: hidden;
@@ -209,7 +260,6 @@ li{
   right:0;
 }
 
-/* Use pseudo elements to insert arrows inside of navigation buttons */
 .carousel__button--prev::after,
 .carousel__button--next::after {
   content: " ";
@@ -232,7 +282,7 @@ li{
 	width: 100%;
 	height: 89px;
 	top: 935px;
-	background: #EEE3E3;
+	background: rgba(238, 227, 227, 1);
 	position: absolute;
 	text-align: center;
 	font-size: 18px;
@@ -247,16 +297,4 @@ li{
   color: black;
   cursor: pointer;
   border-bottom: 1px dashed black;
- }
- .cld{
- 	float: right;
- 	margin-left: 400px;
- 	width: 189px;
- 	height: 22px;
- 	background-color: #FBDCC0;
- 	text-align: center;
-
- }
- .help{
- 	display: inline-block;
  }
