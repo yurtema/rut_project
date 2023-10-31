@@ -16,15 +16,15 @@
 <body>
     <div class = "header">
     	<h1>Мероприятия твоего города</h1>
-    	<img src="1.png" class = "ft">
+    	<img src="{% static 'main/img/1.png' %}" class = "ft">
     		<a href="">Личный кабинет</a>
-    	<img src="2.png" class = "sd">
+    	<img src="{% static 'main/img/2.png' %}" class = "sd">
     	<a href="">Город</a>
     </div>
     <div class = "block2">
-    	<img src="logo.png" class = "logo">
+    	<img src="{% static 'main/img/logo.png' %}" class = "logo">
     	<div class="search">
-    		<img src="lupa.png" class="td">
+    		<img src="{% static 'main/img/lupa.png' %}" class="td">
     		<a href="">Введите название мероприятия</a>
     	</div>
     	<div class="cal">
@@ -65,10 +65,10 @@
     <div class="carousel-wrapper">
     <div class="carousel">
 
-      <img class="carousel__photo initial" src="promo.png">
+      <img class="carousel__photo initial" src="{% static 'main/img/promo.png' %}">
       <img class="carousel__photo" src="http://placekitten.com/g/1600/900">
       <img class="carousel__photo" src="http://placekitten.com/1600/900">
-      <img class="carousel__photo" src="promo.png">
+      <img class="carousel__photo" src="{% static 'main/img/promo.png' %}">
       <img class="carousel__photo" src="http://placekitten.com/1600/900">
       
       <div class="carousel__button--next"></div>
@@ -87,6 +87,6 @@
   <a href="">Поддержка<a>
   <a href="">Возврат билетов</a>
   </div>
-    <script src="script.js"></script>
+    <script src="{% static 'main/js/script.js' %}"></script>
 </body>
 </html>
