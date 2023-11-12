@@ -1,4 +1,4 @@
-
+{% load static %}
 <!DOCTYPE HTML>
 <html lang="ru">
 <head>
@@ -10,21 +10,21 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="{% static 'main/css/2.css' %}">
-	<title>Мероприятия твоего города</title>
+	<link rel="stylesheet" href="{% static 'main/css/cssoth.css' %}">
+	<title>Другое</title>
 </head>
 <body>
 	<div class = "header">
 		<h1>Мероприятия твоего города</h1>
-		<img src="1.png" class = "ft">
+		<img src="{% static 'main/img/1.png' %}" class = "ft">
 		<a href="" >Личный кабинет</a>
-		<img src="2.png" class = "sd">
+		<img src="{% static 'main/img/2.png' %}" class = "sd">
 		<a href="">Город</a>
 	</div>
 	<div class = "block2">
-		<a href =><img src="logo.png" class = "logo"></a>
+		<a href = '{% url 'home' %}><img src="{% static 'main/img/logo.png' %} class = "logo"></a>
 		<div class="search">
-			<img src="lupa.png" class="lupa">
+			<img src="{% static 'main/img/lupa.png' %}" class="lupa">
 			<a href="">Введите название мероприятия</a>
 		</div>
 		<div class="cal">
@@ -59,7 +59,7 @@
 				<br>
 				<br>
 				<br>
-				<a href="{% url 'other' %}">Другое</a>
+				<a href="{% url 'home' %}">Назад</a>
 				<br>
 				<br>
 				<br>
