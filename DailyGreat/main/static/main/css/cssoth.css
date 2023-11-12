@@ -1,237 +1,192 @@
 *{
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-  list-style: none;
-  text-decoration: none;
-
- }
- body{
- 	background-color: #f8ECEC;
- }
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	background-color: #f8ECEC;
+}
 .header{
 	display: flex;
 	width: 100%;
-	height: 75px;
+	height: 85px;
 	align-items: center;
 	border: 3px solid #977070;
-	z-index: 99;
+	position: static;
 }
 h1{
-font-size: 25px;
-font-weight: 600;
-line-height: 27px;
-letter-spacing: 0em;
-text-align: left;
-padding-left: 25px;
-}
-h2{
-	font-size: 36px;
-	font-weight: 200;
-	line-height: 44px;
-	letter-spacing: 0em;
+	font-size: 24px;
+	font-weight: 600;
+	padding-left: 1%;
 }
 .ft{
-	width: 41px;
-	height: 41px;
-	margin-left: 625.5px;
-	padding-right: 10px;
+	padding-left: 600px;
 }
 .sd{
-	padding-left: 50px;
-	width: 31px;
-	height: 36px;
-	padding-right: 10px;
+	padding-left: 60px;
 }
-.td{
-	width: 42px;
-	height: 42px;
-	padding-top: 7px;
-	padding-left: 15px;
-
-}
-.town{
-	width: 104px;
-	height: 35px;
-	background-color: #A9A9A9;
-	text-align: center;
-	border-radius: 20px;
-	padding-top: 2px;
-}
-.lk{
-	width: 225px;
-	height: 35px;
-	background-color: #A9A9A9;
-	text-align: center;
-	border-radius: 20px;
-	padding-top: 2px;
-}
-
 .header a{
-	background: rgba(218, 203, 203, 1);
+	margin-left: 1%;
 	color: black;
-	font-weight: 500;
-	font-size: 23px;
+	font-weight: 300;
+	font-size: 20px;
+	background: rgba(218, 203, 203, 1);
 	cursor: pointer;
 	border-radius: 20px;
 	padding: 7px 14px;
-
 }
 .header a:hover{
-  background: rgba(251, 220, 192, 1);
-  color: black;
-  cursor: pointer;
-  transition: 0.5s;
- }
- .block2{
- 	display: flex;
- 	align-items: center;
-
- }
+	background: rgba(251, 220, 192, 1);
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.block2{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-top: 70px;
+	position: static;
+}
 .logo{
-	padding-top: 78px;
-	padding-left: 140px;
-	width: 78px;
-	height: 78px;
+	margin-left: 150px;
 	cursor: pointer;
 }
+.search{
+	width: 600px;
+	height:62px;
+	background: rgba(251, 220, 192, 1);
+	display: flex;
+	align-items: center;
+	border-radius: 30px;
+	margin-left: 250px;
+}
+.lupa{
+	padding-left: 2%;
+}
+.search a{
+	padding-left: 2%;
+	color: grey;
+	cursor: text;
+}
+.cal a{
+	cursor: pointer;
+	margin-left: 80px;
+	padding: 20.5px 14px;
+	color: black;
+	font-weight: 600;
+	font-size: 18px;
+	border-radius: 20px;
+	background: rgba(251, 220, 192, 1);
+}
+.cal a:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: 0.3s;
+	cursor: pointer;
+}
+.block3{
+	display: flex;
+	width: 100%;
+	margin-top: 70px;
+	margin-left: 30px;
+	position: static;
+}
 .menu{
-	width: 314px;
+	width: 330px;
 	height: 550px;
-	margin-top:57px;
-	margin-left: 29px;
 	text-align: center;
 	background: rgba(238, 227, 227, 1);
 	border-radius: 30px;
-	position: absolute;
 	z-index:100;
+	position: static;
+}
+h2{
+	padding-top: 5%;
+	font-size: 36px;
+	font-weight: 300;
 }
 li{
-	padding-top: 20px;
-	text-align: center;
+	padding-top: 30px;
 }
 .menu a{
 	background-color: rgba(218, 203, 203, 0.6);
 	color: black;
-	font-weight: 500;
-	font-size: 23px;
+	font-weight: 300;
+	font-size: 22px;
 	cursor: pointer;
 	border-radius: 20px;
-
-}
-.search{
-	width: 50%;
-	height:62px;
-	margin-top: 100px;
-	background: rgba(251, 220, 192, 1);
-	display: flex;
-	align-items: center;
-	border-radius: 30px;
-	margin-left: 20%;
-}
-.search a{
-	padding-left: 30px;
-	color: grey;
-	cursor: text;
-
-}
-.cal{
-	width: 15%; 
-	height: 62px;
-	top: 94px;
-	border-radius: 20px;
-	background: rgba(251, 220, 192, 1);
-	display: flex;
-	margin-top: 100px;
-	margin-left: 6%;
-	align-items: center;
-	cursor: pointer;
-}
-.cal a{
-	padding-left: 33%;
-	color: black;
-	font-weight: 600;
-	font-size: 18px;
-}
-.cal:hover{
-	background-color: rgba(0, 0, 0, 0.4);
-	transition: 0.5s;
-}
-.menu a{
-  color: black ;
-  padding: 8px 15px;
+	color: black ;
+	padding: 8px 15px;
 }
 .menu a:hover{
-  background-color: rgba(251, 220, 192, 1);
-  color: black;
-  cursor: pointer;
-  transition: 0.5s;
- }
-
-.footer{
-	padding-top: 80px;
-	width: 100%;
-	height: 89px;
-	top: 935px;
+	background-color: rgba(251, 220, 192, 1);
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.block4{
 	background: rgba(238, 227, 227, 1);
-	position: absolute;
+	border-radius: 20px;
+	margin-left: 100px;
+	width: 1000px;
+}
+.block4 a{
+	color: black;
+	font-weight: 400;
+	font-size: 25px;
+}
+.cont{
+	width: 250px;
+	height: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+	background: rgba(218, 203, 203, 0.6);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.cont:hover{
+	background-color: rgba(251, 220, 192, 1);
+	transition: 0.3s;
+}
+.one{
+	margin-top: 65px;
+	display: flex;
+	justify-content: center;
+}
+.two{
+	margin-top: 58px;
+	display: flex;
+	justify-content: center;
+}
+.three{
+	margin-top: 58px;
+	display: flex;
+	justify-content: center;
+}
+.footer{
+	display: flex;
+	align-items: center;
+	margin-top: 100px;
+	width: 100%;
+	height: 200px;
+	background: rgba(238, 227, 227, 1);
 	text-align: center;
 	font-size: 18px;
-	font-weight: 100;
+	font-weight: 200;
+	justify-content: center;
 }
 .footer a{
 	color: black;
-	margin-right: 30px;
+	margin-right: 22px;
 	text-align: center;
 }
 .footer a:hover{
-  color: black;
-  cursor: pointer;
-  border-bottom: 1px dashed black;
- }
-.other{
-	width: 968px;
-	height: 550px;
-	margin-left: 400px;
-	margin-top: 57px;
-	font-weight: 600px;
-	font-size: 30px;
-	background: rgba(238, 227, 227, 1);
-	border-radius: 20px;
-	display: flex;
-	align-items: initial;
-}
-.other a{
 	color: black;
-}
-.ex{
-	margin-top: 50px;
-	width: 355px;
-	height: 100px;
-	background: rgba(218, 203, 203, 0.6);
-	display: flex;
-	align-items: center;
-	margin-left: 30px;
-	border-radius: 20px;
-}
-.show{
-	width: 355px;
-	height: 100px;
-	background: rgba(218, 203, 203, 0.6);
-	margin-top: 50px;
-	display: flex;
-	align-items: center;
-	margin-left: 198px;
-	border-radius: 20px;
-
-}
-.sport{
-	width: 355px;
-	height: 100px;
-	background: rgba(218, 203, 203, 0.6);
-	margin-top: 50px;
-	display: flex;
-	align-items: center;
-	margin-left: 198px;
-	border-radius: 20px;
+	cursor: pointer;
+	border-bottom: 1px dashed black;
 }
