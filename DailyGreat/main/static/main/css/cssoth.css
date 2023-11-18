@@ -6,6 +6,7 @@
 	text-decoration: none;
 }
 body{
+	overflow-x: hidden;
 	background-color: #f8ECEC;
 }
 .header{
@@ -38,7 +39,7 @@ h1{
 	padding: 7px 14px;
 }
 .header a:hover{
-	background: rgba(251, 220, 192, 1);
+	background-color: rgba(0, 0, 0, 0.4);;
 	color: black;
 	cursor: pointer;
 	transition: 0.3s;
@@ -110,7 +111,7 @@ h2{
 li{
 	padding-top: 30px;
 }
-.menu a{
+.no{
 	background-color: rgba(218, 203, 203, 0.6);
 	color: black;
 	font-weight: 300;
@@ -120,8 +121,8 @@ li{
 	color: black ;
 	padding: 8px 15px;
 }
-.menu a:hover{
-	background-color: rgba(251, 220, 192, 1);
+.no:hover{
+	background-color: rgba(0, 0, 0, 0.4);;
 	color: black;
 	cursor: pointer;
 	transition: 0.3s;
@@ -134,14 +135,14 @@ li{
 }
 .block4 a{
 	color: black;
-	font-weight: 400;
-	font-size: 25px;
+	font-weight: 500;
+	font-size: 30px;
 }
 .cont{
 	width: 250px;
 	height: 100px;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 120px;
+	margin-right: 120px;
 	background: rgba(218, 203, 203, 0.6);
 	display: flex;
 	align-items: center;
@@ -150,7 +151,7 @@ li{
 	cursor: pointer;
 }
 .cont:hover{
-	background-color: rgba(251, 220, 192, 1);
+	background-color: rgba(0, 0, 0, 0.4);
 	transition: 0.3s;
 }
 .one{
@@ -189,4 +190,27 @@ li{
 	color: black;
 	cursor: pointer;
 	border-bottom: 1px dashed black;
+}
+.oth{
+	background-color: rgba(0, 0, 0, 0.4);
+	color: black;
+	font-weight: 300;
+	font-size: 22px;
+	cursor: pointer;
+	border-radius: 20px;
+	color: black ;
+	padding: 8px 15px;
+}
+.pf{
+	background-color: rgba(251, 220, 192, 1);
+	color: black;
+	font-weight: 400;
+	font-size: 22px;
+	cursor: pointer;
+	border-radius: 20px;
+	color: black ;
+	padding: 8px 15px;
+}
+.pf:hover{
+	background-color: rgba(0, 0, 0, 0.4);
 }
