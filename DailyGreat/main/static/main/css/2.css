@@ -57,7 +57,7 @@ h1{
 	cursor: pointer;
 }
 .search{
-	width: 600px;
+	width: 650px;
 	height:62px;
 	background: rgba(251, 220, 192, 1);
 	display: flex;
@@ -75,7 +75,7 @@ h1{
 }
 .cal a{
 	cursor: pointer;
-	margin-left: 80px;
+	margin-left: 100px;
 	padding: 20.5px 14px;
 	color: black;
 	font-weight: 600;
