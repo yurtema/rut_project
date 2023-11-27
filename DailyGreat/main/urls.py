@@ -11,4 +11,5 @@ urlpatterns = [
     path('concert', views.concert, name = 'concert'),
     path('other', views.other, name = 'other'),
     path('calendary', views.calendary, name = 'calendary'),
+    path('one', views.one, name = 'one')
 ]
