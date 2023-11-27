@@ -26,3 +26,6 @@ def other(request):
 
 def calendary(request):
     return render(request, 'main/calendary.html')
+    
+def one(request):
+    return render(request, 'main/1.html')
