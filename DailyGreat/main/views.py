@@ -24,5 +24,5 @@ def concert(request):
 def other(request):
     return render(request, 'main/other.html')
 
-def calendar(request):
+def calendary(request):
     return render(request, 'main/calendary.html')
