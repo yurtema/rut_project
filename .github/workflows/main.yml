@@ -26,4 +26,4 @@ jobs:
 
     - name: Deploy to server
       run: |
-        ssh pi@yurtema.duckdns.org "cd /home/pi/rut_mtg && git pull && sudo docker-compose up --build -d"
+        ssh pi@yurtema.duckdns.org "cd /home/pi/rut_mtg && git pull && docker build -t mtg . && sudo docker-compose up -d"
