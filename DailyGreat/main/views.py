@@ -25,4 +25,4 @@ def other(request):
     return render(request, 'main/other.html')
 
 def calendar(request):
-    return render(request, 'main/calendary.html')
+    return render(request, 'main/calendar.html')
