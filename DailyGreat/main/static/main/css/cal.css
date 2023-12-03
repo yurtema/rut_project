@@ -38,7 +38,7 @@ h1{
 	padding: 7px 14px;
 }
 .header a:hover{
-	background: rgba(251, 220, 192, 1);
+	background: rgba(0, 0, 0, 0.4);
 	color: black;
 	cursor: pointer;
 	transition: 0.3s;
@@ -121,7 +121,7 @@ li{
 	padding: 8px 15px;
 }
 .menu a:hover{
-	background-color: rgba(251, 220, 192, 1);
+	background-color: rgba(0, 0, 0, 0.4);
 	color: black;
 	cursor: pointer;
 	transition: 0.3s;
