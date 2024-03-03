@@ -1,0 +1,212 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	overflow-x: hidden;
+	background-color: #f8ECEC;
+}
+.header{
+	display: flex;
+	width: 100%;
+	height: 85px;
+	align-items: center;
+	border: 3px solid #977070;
+	position: static;
+}
+h1{
+	font-size: 24px;
+	font-weight: 600;
+	padding-left: 1%;
+}
+.ft{
+	padding-left: 600px;
+}
+.sd{
+	padding-left: 60px;
+}
+.header a{
+	margin-left: 1%;
+	color: black;
+	font-weight: 300;
+	font-size: 20px;
+	background: rgba(218, 203, 203, 1);
+	cursor: pointer;
+	border-radius: 20px;
+	padding: 7px 14px;
+}
+.header a:hover{
+	background-color: rgba(0, 0, 0, 0.4);;
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.block2{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-top: 70px;
+	position: static;
+}
+.logo{
+	margin-left: 150px;
+	cursor: pointer;
+}
+.search{
+	width: 650px;
+	height:62px;
+	background: rgba(251, 220, 192, 1);
+	display: flex;
+	align-items: center;
+	border-radius: 30px;
+	margin-left: 250px;
+}
+.lupa{
+	padding-left: 2%;
+}
+.search a{
+	padding-left: 2%;
+	color: grey;
+	cursor: text;
+}
+.cal a{
+	cursor: pointer;
+	margin-left: 100px;
+	padding: 20.5px 14px;
+	color: black;
+	font-weight: 600;
+	font-size: 18px;
+	border-radius: 20px;
+	background: rgba(251, 220, 192, 1);
+}
+.cal a:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: 0.3s;
+	cursor: pointer;
+}
+.block3{
+	display: flex;
+	width: 100%;
+	margin-top: 70px;
+	margin-left: 30px;
+	position: static;
+}
+.menu{
+	width: 330px;
+	height: 550px;
+	text-align: center;
+	background: rgba(238, 227, 227, 1);
+	border-radius: 30px;
+	z-index:100;
+	position: static;
+}
+h2{
+	padding-top: 5%;
+	font-size: 36px;
+	font-weight: 300;
+}
+li{
+	padding-top: 30px;
+}
+.no{
+	background-color: rgba(218, 203, 203, 0.6);
+	color: black;
+	font-weight: 300;
+	font-size: 22px;
+	cursor: pointer;
+	border-radius: 20px;
+	color: black ;
+	padding: 8px 15px;
+}
+.no:hover{
+	background-color: rgba(0, 0, 0, 0.4);;
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.block4{
+	align-items: center;
+	display: flex;
+	background: rgba(238, 227, 227, 1);
+	border-radius: 20px;
+	margin-left: 100px;
+	width: 950px;
+}
+.block4 img{
+	cursor: pointer;
+	width: 320px;
+	height: 160px;
+}
+.block4 a{
+	color: black;
+	cursor: pointer;
+}
+.block4 a:hover{
+	color: black;
+	cursor: pointer;
+	border-bottom: 2px dashed black;
+}
+.block5{
+	padding-top: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.block6{
+	padding-top: 20px;
+	padding-right: 100px;
+}
+figcaption{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: left;
+	font-size: 15px;
+	font-weight: 400;
+}
+.footer{
+	display: flex;
+	align-items: center;
+	margin-top: 100px;
+	width: 100%;
+	height: 200px;
+	background: rgba(238, 227, 227, 1);
+	text-align: center;
+	font-size: 18px;
+	font-weight: 200;
+	justify-content: center;
+}
+.footer a{
+	color: black;
+	margin-right: 22px;
+	text-align: center;
+}
+.footer a:hover{
+	color: black;
+	cursor: pointer;
+	border-bottom: 1px dashed black;
+}
+.cin{
+	background-color: rgba(0, 0, 0, 0.4);
+	color: black;
+	font-weight: 300;
+	font-size: 22px;
+	cursor: pointer;
+	border-radius: 20px;
+	color: black ;
+	padding: 8px 15px;
+}
+.pf{
+	background-color: rgba(251, 220, 192, 1);
+	color: black;
+	font-weight: 400;
+	font-size: 22px;
+	cursor: pointer;
+	border-radius: 20px;
+	color: black ;
+	padding: 8px 15px;
+}
+.pf:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+}

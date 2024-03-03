@@ -1,0 +1,264 @@
+{
+	margin 0;
+	padding 0;
+	font-family 'Inter', sans-serif;
+	list-style none;
+	text-decoration none;
+}
+body{
+	background-color #f8ECEC;
+	width100%;
+	overflow-x hidden;
+}
+.header{
+	display flex;
+	width 100%;
+	height 85px;
+	align-items center;
+	border 3px solid #977070;
+	position static;
+}
+h1{
+	font-size 24px;
+	font-weight 600;
+	padding-left 1%;
+}
+.ft{
+	padding-left 600px;
+}
+.sd{
+	padding-left 60px;
+}
+.header a{
+	margin-left 1%;
+	color black;
+	font-weight 300;
+	font-size 20px;
+	background rgba(218, 203, 203, 1);
+	cursor pointer;
+	border-radius 20px;
+	padding 7px 14px;
+}
+.header ahover{
+	background rgba(0, 0, 0, 0.4);
+	color black;
+	cursor pointer;
+	transition 0.3s;
+}
+.block2{
+	display flex;
+	align-items center;
+	width 100%;
+	margin-top 70px;
+	position static;
+}
+.logo{
+	margin-left 150px;
+	cursor pointer;
+}
+.search{
+	width 650px;
+	height62px;
+	background rgba(251, 220, 192, 1);
+	display flex;
+	align-items center;
+	border-radius 30px;
+	margin-left 250px;
+}
+.lupa{
+	padding-left 2%;
+}
+.search a{
+	padding-left 2%;
+	color grey;
+	cursor text;
+}
+.cal a{
+	cursor pointer;
+	margin-left 100px;
+	padding 20.5px 14px;
+	color black;
+	font-weight 600;
+	font-size 18px;
+	border-radius 20px;
+	background rgba(251, 220, 192, 1);
+}
+.cal ahover{
+	background-color rgba(0, 0, 0, 0.4);
+	transition 0.3s;
+	cursor pointer;
+}
+.block3{
+	display flex;
+	width 100%;
+	margin-top 70px;
+	margin-left 30px;
+	position static;
+}
+.menu{
+	width 330px;
+	height 550px;
+	text-align center;
+	background rgba(238, 227, 227, 1);
+	border-radius 30px;
+	z-index100;
+	position static;
+}
+h2{
+	padding-top 5%;
+	font-size 36px;
+	font-weight 300;
+}
+li{
+	padding-top 30px;
+}
+.no{
+	background-color rgba(218, 203, 203, 0.6);
+	color black;
+	font-weight 300;
+	font-size 22px;
+	cursor pointer;
+	border-radius 20px;
+	color black ;
+	padding 8px 15px;
+}
+.nohover{
+	background-color rgba(0, 0, 0, 0.4);
+	color black;
+	cursor pointer;
+	transition 0.3s;
+}
+.carousel-wrapper {
+	width 950px;
+	margin-left 400px;
+	position absolute;
+}
+.carousel-wrapper  {
+	box-sizing border-box;
+}
+.carousel {
+	-webkit-transform-style preserve-3d;
+	-moz-transform-style preserve-3d;
+	transform-style preserve-3d;
+}
+.carousel__photo {
+	opacity 0;
+	position absolute;
+	top0;
+	width 950px;
+	margin auto;
+	padding 1rem 4rem;
+	z-index 100;
+	transition transform .5s, opacity .5s, z-index .5s;
+}
+.carousel__photo.initial,
+.carousel__photo.active {
+	opacity 1;
+	position relative;
+	z-index 900;
+}
+
+.carousel__photo.prev,
+.carousel__photo.next {
+	z-index 800;
+}
+
+.carousel__photo.prev {
+	transform translateX(-100%);
+}
+
+.carousel__photo.next {
+	transform translateX(100%);
+}
+.carousel__button--prev,
+.carousel__button--next {
+	position absolute;
+	top50%;
+	width 3rem;
+	height 3rem;
+	transform translateY(-50%);
+
+	cursor pointer; 
+	z-index 1001;
+}
+
+.carousel__button--prev {
+	left0;
+}
+
+.carousel__button--next {
+	right0;
+}
+
+.carousel__button--prevafter,
+.carousel__button--nextafter {
+	content  ;
+	position absolute;
+	width 37px;
+	height 37px;
+	top 50%;
+	left 54%;
+	border-right 2px solid black;
+	border-bottom 2px solid black;
+	transform translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel__button--nextafter {
+	left 47%;
+	transform translate(-50%, -50%) rotate(-45deg);
+}
+.buy{
+	height 50px;
+	background rgba(251, 220, 192, 1);
+	border-radius 20px;
+	display flex;
+	align-items center;
+	font-weight 500;
+	font-size 18px;
+	cursor pointer;
+	margin-top 490px;
+	margin-left 130px;
+	padding 7px 14px;
+}
+.buy a{
+	color black;
+}
+.buyhover{
+	background-color rgba(0, 0, 0, 0.4);
+	transition 0.3s;
+}
+.footer{
+	display flex;
+	align-items center;
+	margin-top 100px;
+	width 100%;
+	height 200px;
+	background rgba(238, 227, 227, 1);
+	text-align center;
+	font-size 18px;
+	font-weight 200;
+	justify-content center;
+}
+.footer a{
+	color black;
+	margin-right 22px;
+	text-align center;
+}
+.footer ahover{
+	color black;
+	cursor pointer;
+	border-bottom 1px dashed black;
+}
+.pf{
+	background-color rgba(251, 220, 192, 1);
+	color black;
+	font-weight 400;
+	font-size 22px;
+	cursor pointer;
+	border-radius 20px;
+	color black ;
+	padding 8px 15px;
+}
+.pfhover{
+	background-color rgba(0, 0, 0, 0.4);
+}

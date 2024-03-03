@@ -1,0 +1,225 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	width: 100%;
+	height: 1000px;
+	overflow-x: hidden;
+	background-color: #f8ECEC;
+}
+.header{
+	display: flex;
+	width: 100%;
+	height: 8%;
+	align-items: center;
+	border: 3px solid #977070;
+	position: static;
+}
+h1{
+	min-width: 50%;
+	font-size: 23px;
+	font-weight: 600;
+	padding-left: 2%;
+}
+.ft{
+	padding-left: 20%;
+}
+.sd{
+	padding-left: 1%;
+}
+.header a{
+	white-space: nowrap;
+	margin-left: 0.3%;
+	color: black;
+	font-weight: 300;
+	font-size: 20px;
+	background: rgba(218, 203, 203, 1);
+	cursor: pointer;
+	border-radius: 20px;
+	padding: 0.55% 1.1%;
+}
+.header a:hover{
+	background: rgba(0, 0, 0, 0.4);
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.block2{
+	position: static;
+	width: 100%;
+	margin-left: 11%;
+	display: flex;
+	align-items: center;
+	margin-top: 5%;
+	position: static;
+}
+.logo{
+	cursor: pointer;
+}
+#search{
+	min-width: 650px;
+	height:62px;
+	background: rgba(251, 220, 192, 1);
+	display: flex;
+	align-items: center;
+	border-radius: 30px;
+	margin-left: 15%;
+}
+.lupa{
+	padding-left: 2%;
+}
+#search{
+	padding-left: 2%;
+	color: grey;
+	cursor: text;
+}
+#cal{
+	margin-left: 8%;
+	cursor: pointer;
+	padding: 20.5px 17px;
+	color: black;
+	font-weight: 600;
+	font-size: 16px;
+	border-radius: 20px;
+	background: rgba(251, 220, 192, 1);
+}
+#cal:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: 0.3s;
+	cursor: pointer;
+}
+.block3{
+	margin-top: 6%;
+	margin-left: 2.5%;
+	display: flex;
+	margin-top: 6%;
+	margin-left: 2.5%;
+	position: static;
+}
+.menu{
+	text-align: center;
+	min-width: 23%;
+	background: rgba(238, 227, 227, 1);
+	border-radius: 30px;
+	z-index:100;
+	position: static;
+}
+.menu a{
+	white-space: nowrap;
+}
+h2{
+	padding-top: 5%;
+	font-size: 36px;
+	font-weight: 300;
+}
+li{
+	padding-top: 30px;
+}
+.no{
+	background-color: rgba(218, 203, 203, 0.6);
+	color: black;
+	font-weight: 300;
+	font-size: 22px;
+	cursor: pointer;
+	border-radius: 20px;
+	color: black ;
+	padding: 8px 15px;
+}
+.no:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.pf{
+	background-color: rgba(251, 220, 192, 1);
+	color: black;
+	font-weight: 400;
+	font-size: 22px;
+	cursor: pointer;
+	border-radius: 20px;
+	color: black ;
+	padding: 8px 15px;
+}
+.pf:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.block4{
+	position: absolute;
+	align-items: center;
+	display: flex;
+	background: rgba(238, 227, 227, 1);
+	border-radius: 20px;
+	margin-left: 400px;
+	width: 900px;
+}
+.block4 img{
+	cursor: pointer;
+	width: 320px;
+	height: 160px;
+}
+.block4 a{
+	color: black;
+	cursor: pointer;
+}
+.block4 a:hover{
+	color: black;
+	cursor: pointer;
+	border-bottom: 2px dashed black;
+}
+.block5{
+	padding-top: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.block6{
+	padding-top: 20px;
+	padding-right: 100px;
+}
+figcaption{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: left;
+	font-size: 15px;
+	font-weight: 400;
+}
+.footer{
+	display: flex;
+	align-items: center;
+	margin-top: 100px;
+	width: 100%;
+	height: 200px;
+	background: rgba(238, 227, 227, 1);
+	text-align: center;
+	font-size: 18px;
+	font-weight: 200;
+	justify-content: center;
+}
+.footer a{
+	white-space: nowrap;
+	color: black;
+	margin-right: 22px;
+	text-align: center;
+}
+.footer a:hover{
+	color: black;
+	cursor: pointer;
+	border-bottom: 1px dashed black;
+}
+.pf{
+	background-color: rgba(251, 220, 192, 1);
+	color: black;
+	font-weight: 400;
+	font-size: 22px;
+	cursor: pointer;
+	border-radius: 20px;
+	color: black ;
+	padding: 8px 15px;
+}
+.pf:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+}
