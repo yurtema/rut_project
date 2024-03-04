@@ -1,14 +1,17 @@
-let blocksLoaded = 1; // Initial block loaded
-const block5s = document.querySelectorAll('.block5'); // Select all block5 elements
-const loadMoreBtn = document.getElementById('loadMore'); // Select the Load More button
-const block4 = document.getElementById('block4'); // Select the block4 element
+let currentIndex = 0;
+const block5Elements = document.querySelectorAll('.block5');
+const showNextButton = document.getElementById('showNext');
 
-loadMoreBtn.addEventListener('click', loadMoreBlocks);
-
-function loadMoreBlocks() {
-    for (let i = 0; i < 4; i++) {
-        const clone = block5s[0].cloneNode(true); // Clone the first block5 element
-        block4.appendChild(clone); // Append the clone to block4
+function showNextFour() {
+    const nextIndex = currentIndex + 4;
+    for (let i = currentIndex; i < nextIndex; i++) {
+        if (block5Elements[i]) {
+            block5Elements[i].style.display = 'block';
+        }
     }
-    blocksLoaded += 1;
+    currentIndex = nextIndex;
 }
+
+showNextFour(); // Show the initial 4 block5 elements
+
+showNextButton.addEventListener('click', showNextFour);
