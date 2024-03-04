@@ -158,35 +158,32 @@ li{
         justify-content: space-between;
     }
 
-    .block5 {
+.block5 {
         width: 48%; /* Ширина каждой колонки */
         margin-bottom: 20px; /* Расстояние между колонками */
-    }
+}
 
-    .block5 figure {
+.block5 figure {
         margin: 0;
         padding: 0;
-    }
-
-    .block5 figure img {
-        width: 100%;
-        height: auto;
-    }
-
-    .block5 figure figcaption {
-        text-align: center;
-        margin-top: 10px;
-    }
-.block6{
-	padding-top: 20px;
-	padding-right: 100px;
 }
-figcaption{
-	margin-top: 20px;
+
+.block5 figure img {
+       cursor: pointer;
+	width: 320px;
+	height: 160px;
+}
+
+.block5 figure figcaption {
+        margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: left;
 	font-size: 15px;
 	font-weight: 400;
+}
+.block6{
+	padding-top: 20px;
+	padding-right: 100px;
 }
 .footer{
 	display: flex;
