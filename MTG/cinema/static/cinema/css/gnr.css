@@ -147,34 +147,31 @@ li{
 	cursor: pointer;
 	transition: 0.3s;
 }
-.block4{
-	position: absolute;
-	align-items: center;
-	display: inline;
-	background: rgba(238, 227, 227, 1);
-	border-radius: 20px;
-	margin-left: 400px;
-	width: 900px;
-}
-.block4 img{
-	cursor: pointer;
-	width: 320px;
-	height: 160px;
-}
-.block4 a{
-	color: black;
-	cursor: pointer;
-}
-.block4 a:hover{
-	color: black;
-	cursor: pointer;
-	border-bottom: 2px dashed black;
-}
-.block5{
-	padding-top: 20px;
-	padding-left: 100px;
-	padding-right: 100px;
-}
+.block4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .block5 {
+        width: 48%; /* Ширина каждой колонки */
+        margin-bottom: 20px; /* Расстояние между колонками */
+    }
+
+    .block5 figure {
+        margin: 0;
+        padding: 0;
+    }
+
+    .block5 figure img {
+        width: 100%;
+        height: auto;
+    }
+
+    .block5 figure figcaption {
+        text-align: center;
+        margin-top: 10px;
+    }
 .block6{
 	padding-top: 20px;
 	padding-right: 100px;
