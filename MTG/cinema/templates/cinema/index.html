@@ -63,11 +63,11 @@
 		<div class="block4">
 			{% for event in events %}
             			{% if event.id %}
-            <div class="block5">
-				<figure>
+            <table>
+				<tr>
 					<img src="{{ event.poster }}">
-					<figcaption><a href="{% url 'event_detail1' event.id %}">{{ event.title }}</a></figcaption>
-				</figure>
+					<td></td><a href="{% url 'event_detail1' event.id %}">{{ event.title }}</a></td>
+				</tr>
             			{% endif %}
             		{% endfor %}
 		</div>
