@@ -148,6 +148,11 @@ li{
 	transition: 0.3s;
 }
 .block4 {
+	position: absolute;
+	background: rgba(238, 227, 227, 1);
+	border-radius: 20px;
+	margin-left: 400px;
+	width: 900px;
         display: inline-flex;
         flex-wrap: wrap;
         justify-content: space-between;
