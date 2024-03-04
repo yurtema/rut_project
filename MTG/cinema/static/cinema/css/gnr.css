@@ -150,7 +150,7 @@ li{
 .block4{
 	position: absolute;
 	align-items: center;
-	display: flex;
+	display: inline;
 	background: rgba(238, 227, 227, 1);
 	border-radius: 20px;
 	margin-left: 400px;
