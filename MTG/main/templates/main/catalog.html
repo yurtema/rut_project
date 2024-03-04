@@ -1,88 +1,15 @@
-{% load static %}
-<!DOCTYPE HTML>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <body style="background-color: #f8ECEC">
-        <meta charset="UTF-8">
-        <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{% static 'styles.css' %}">
-        <title>Главная страница</title>
-    </head>
-    <body>
-        <div class = "header">
-            <h1>Мероприятия твоего города</h1>
-            <img src="{% static 'main/img/1.png' %}" class = "ft">
-            <a href="" >Личный кабинет</a>
-            <img src="{% static 'main/img/2.png' %}" class = "sd">
-            <a href="">Город</a>
-        </div>
-        <div class = "block2">
-            <a href = '{% url 'home' %}'><img src="{% static 'main/img/logo.png' %}" class = "logo"></a>
-            <a href="" id="search"><img src="{% static 'main/img/lupa.png' %}" class="td">Введите название мероприятия</a>
-            <a href="" id="cal">30.10.23-01.01.25</a>
-        </div>
-        <div class="block3">
-            <div class = "menu">
-                <h2>Категории:</h2>
-                <li>
-                    <a href="" class="pf">Персональный фильтр</a>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="{% url 'child' %}" class="no">Для детей</a>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="{% url 'events_catalog1' %}" class="no">Кино</a>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="{% url 'events_catalog2' %}" class="no">Театр</a>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="{% url 'exhibition' %}" class="no">Выставки</a>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="{% url 'events_catalog3' %}" class="no">Концерты</a>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="{% url 'other' %}" class="no">Другое</a>
-                    <br>
-                    <br>
-                    <br>
-                </li>
-            </div>
-            <div class="carousel-wrapper">
-                <div class="carousel">
-                    <img class="carousel__photo initial" src="promo.png">
-                    <img class="carousel__photo" src="http://placekitten.com/g/1600/900">
-                    <img class="carousel__photo" src="http://placekitten.com/1600/900">
-                    <img class="carousel__photo" src="promo.png">
-                    <img class="carousel__photo" src="http://placekitten.com/1600/900">
-                    <div class="carousel__button--next"></div>
-                    <div class="carousel__button--prev"></div>
-                </div>
-            </div>
-            <div class="buy">
-                <a href="">Купить билет</a>
-            </div>
-        </div>
-        <div class = "footer">
-            <a href="">Справка</a>
-            <a href="">Пользовательское соглашение</a>
-            <a href="">Партнёрам и организаторам мероприятий</a>
-            <a href="">Поддержка<a>
-                <a href="">Возврат билетов</a>
-            </div>
-            <script src="script.js"></script>
-        </body>
-        </html>
+    <meta charset="UTF-8">
+    <title>General Catalog</title>
+</head>
+<body>
+    <h1>General Catalog</h1>
+    <ul>
+        <li><a href="{% url 'events_catalog1' %}">Cinema</a></li>
+        <li><a href="{% url 'events_catalog2' %}">Theatre</a></li>
+        <li><a href="{% url 'events_catalog3' %}">Concert</a></li>
+    </ul>
+</body>
+</html>
