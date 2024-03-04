@@ -148,6 +148,7 @@ li{
 	transition: 0.3s;
 }
 .block4 {
+	align-items:center;
 	position: absolute;
 	background: rgba(238, 227, 227, 1);
 	border-radius: 20px;
@@ -169,9 +170,7 @@ li{
 .block5 {
         width: 48%;
         margin-bottom: 20px;
-	padding-top: 20px;
-	padding-left: 100px;
-	padding-right: 100px;
+	margin-top: 20px;
 }
 
 .block5 figure {
