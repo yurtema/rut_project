@@ -62,11 +62,11 @@
 
 		<div class="block4">
 			{% for event in events %}
-            {% if event.id %}
+            			{% if event.id %}
             <div class="block5">
 				<figure>
 					<img src="">
-					<figcaption><a href="">text</a></figcaption>
+					<figcaption><a href="">{{ event.title }}</a></figcaption>
 				</figure>
 				<figure>
 					<img src="">
@@ -83,8 +83,8 @@
 					<figcaption><a href="">text</a></figcaption>
 				</figure>
 			</div>
-            {% endif %}
-            {% endfor %}
+            			{% endif %}
+            		{% endfor %}
 		</div>
 	</div>
 	<div class = "footer">
