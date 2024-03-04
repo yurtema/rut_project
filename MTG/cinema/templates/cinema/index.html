@@ -65,7 +65,7 @@
             			{% if event.id %}
             <div class="block5">
 				<figure>
-					<img src="">
+					<img src="{{ event.poster }}">
 					<figcaption><a href="{% url 'event_detail1' event.id %}">{{ event.title }}</a></figcaption>
 				</figure>
             			{% endif %}
