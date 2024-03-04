@@ -156,8 +156,16 @@ li{
         display: inline-flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
-
+}
+.block4 a{
+	color: black;
+	cursor: pointer;
+}
+.block4 a:hover{
+	color: black;
+	cursor: pointer;
+	border-bottom: 2px dashed black;
+}
 .block5 {
         width: 48%; /* Ширина каждой колонки */
         margin-bottom: 20px; /* Расстояние между колонками */
