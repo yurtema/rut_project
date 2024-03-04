@@ -167,8 +167,11 @@ li{
 	border-bottom: 2px dashed black;
 }
 .block5 {
-        width: 48%; /* Ширина каждой колонки */
-        margin-bottom: 20px; /* Расстояние между колонками */
+        width: 48%;
+        margin-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 .block5 figure {
