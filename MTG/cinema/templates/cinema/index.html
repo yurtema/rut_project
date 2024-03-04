@@ -62,16 +62,17 @@
 
 		
 		<div class="block4">
-			{% for event in events %}
-            			{% if event.id %}
+    {% for event in events %}
+        {% if event.id %}
             <div class="block5">
-				<figure>
-					<img src="{{ event.poster }}">
-					<figcaption><a href="{% url 'event_detail1' event.id %}">{{ event.title }}</a></figcaption>
-				</figure>
-            			{% endif %}
-            		{% endfor %}
-		</div>
+                <figure>
+                    <img src="{{ event.poster }}">
+                    <figcaption><a href="{% url 'event_detail1' event.id %}">{{ event.title }}</a></figcaption>
+                </figure>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
 	</div>
 	<div class = "footer">
 		<a href="">Справка</a>
