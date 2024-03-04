@@ -168,16 +168,10 @@ li{
 }
 .block5 {
         margin-bottom: 5%;
-	margin-top: 5%;
+	margin-top: 3%;
 	margin-left: 7%;
 	margin-right: 7%;
 }
-
-.block5 figure {
-        margin: 0;
-        padding: 0;
-}
-
 .block5 figure img {
        cursor: pointer;
 	width: 320px;
