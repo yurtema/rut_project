@@ -63,7 +63,7 @@
 		
 		<div class="block4">
     {% for event in events %}
-        {% if event.id is not divisible by 4 %}
+        {% if event.id mod 4 != 0 %}
             <div class="block5">
                 <figure>
                     <img src="{{ event.poster }}">
@@ -71,7 +71,7 @@
                 </figure>
             </div>
         {% endif %}
-								{% if event.id is divisibleby 4 %}
+								{% if event.id mod 4 == 0 %}
 												<button id="showNext" style="display: block; margin: 20px auto;">Show next 4</button>
 								{% endif %}
     {% endfor %}
