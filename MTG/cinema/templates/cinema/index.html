@@ -62,6 +62,7 @@
 
 		
 		<div class="block4">
+				{% set count = 1 %}
     {% for event in events %}
         {% if event.id %}
             <div class="block5">
@@ -70,9 +71,12 @@
                     <figcaption><a href="{% url 'event_detail1' event.id %}">{{ event.title }}</a></figcaption>
                 </figure>
             </div>
+												{% count+=1 %}
+												{% if count % 4 == 0 %}
+																																<button id="showNext" style="display: block; margin: 20px auto;">Show next 4</button>
+												{% endif %}
         {% endif %}
     {% endfor %}
-																<button id="showNext" style="display: block; margin: 20px auto;">Show next 4</button>
 </div>
 	</div>
 	<div class = "footer">
