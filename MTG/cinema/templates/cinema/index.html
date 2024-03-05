@@ -63,7 +63,7 @@
 		
 		<div class="block4">
     {% for event in events %}
-        {% if event.id mod 4 != 0 %}
+        {% if event.id %}
             <div class="block5">
                 <figure>
                     <img src="{{ event.poster }}">
@@ -71,10 +71,8 @@
                 </figure>
             </div>
         {% endif %}
-								{% if event.id mod 4 == 0 %}
-												<button id="showNext" style="display: block; margin: 20px auto;">Show next 4</button>
-								{% endif %}
     {% endfor %}
+																<button id="showNext" style="display: block; margin: 20px auto;">Show next 4</button>
 </div>
 	</div>
 	<div class = "footer">
