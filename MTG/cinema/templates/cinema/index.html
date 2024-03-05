@@ -76,7 +76,7 @@
                     <button id="showNext" style="display: block; margin: 20px auto;">Show next 4</button>
                 {% endif %}
 
-                {% if loop.index > 4 and loop.index % 4 == 0 %}
+                {% if loop.index > 4 and loop.index // 4 == 0 %}
                     <button id="showNext{{ loop.index }}" style="display: none; margin: 20px auto;">Show next 4</button>
                 {% endif %}
             {% endfor %}
