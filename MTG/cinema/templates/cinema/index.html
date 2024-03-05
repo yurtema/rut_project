@@ -1,91 +1,93 @@
-{% load static %}
 <!DOCTYPE HTML>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="{% static 'cinema/css/gnr.css' %}">
-	<title>Жанр</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'cinema/css/gnr.css' %}">
+    <title>Жанр</title>
 </head>
 <body>
-	<div class = "header">
-		<h1>Мероприятия твоего города</h1>
-		<img src="1.png" class = "ft">
-		<a href="" >Личный кабинет</a>
-		<img src="2.png" class = "sd">
-		<a href="">Город</a>
-	</div>
-	<div class = "block2">
-		<a href =><img src="logo.png" class = "logo"></a>
-		<a href="" id="search"><img src="lupa.png" class="lupa">Введите название мероприятия</a>
-		<a href="" id="cal">30.10.23-01.01.25</a>
-	</div>
-	<div class="block3">
-            <div class = "menu">
-                <h2>Категории:</h2>
-                <li>
-                    <a href="" class="pf">Персональный фильтр</a>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="" class="no">Для детей</a>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="{% url 'events_catalog1' %}" class="no">Кино</a>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="{% url 'events_catalog2' %}" class="no">Театр</a>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="" class="no">Выставки</a>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="{% url 'events_catalog3' %}" class="no">Концерты</a>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="" class="no">Другое</a>
-                    <br>
-                    <br>
-                    <br>
-                </li>
-            </div>
+    <div class="header">
+        <h1>Мероприятия твоего города</h1>
+        <img src="1.png" class="ft">
+        <a href="" >Личный кабинет</a>
+        <img src="2.png" class="sd">
+        <a href="">Город</a>
+    </div>
+    <div class="block2">
+        <a href=""><img src="logo.png" class="logo"></a>
+        <a href="" id="search"><img src="lupa.png" class="lupa">Введите название мероприятия</a>
+        <a href="" id="cal">30.10.23-01.01.25</a>
+    </div>
+    <div class="block3">
+        <div class="menu">
+            <h2>Категории:</h2>
+            <li>
+                <a href="" class="pf">Персональный фильтр</a>
+                <br>
+                <br>
+                <br>
+                <a href="" class="no">Для детей</a>
+                <br>
+                <br>
+                <br>
+                <a href="{% url 'events_catalog1' %}" class="no">Кино</a>
+                <br>
+                <br>
+                <br>
+                <a href="{% url 'events_catalog2' %}" class="no">Театр</a>
+                <br>
+                <br>
+                <br>
+                <a href="" class="no">Выставки</a>
+                <br>
+                <br>
+                <br>
+                <a href="{% url 'events_catalog3' %}" class="no">Концерты</a>
+                <br>
+                <br>
+                <br>
+                <a href="" class="no">Другое</a>
+                <br>
+                <br>
+                <br>
+            </li>
+        </div>
 
-		
-		<div class="block4">
-				{% set count = 1 %}
-    {% for event in events %}
-        {% if event.id %}
-            <div class="block5">
-                <figure>
-                    <img src="{{ event.poster }}">
-                    <figcaption><a href="{% url 'event_detail1' event.id %}">{{ event.title }}</a></figcaption>
-                </figure>
-            </div>
-												{% count+=1 %}
-												{% if count % 4 == 0 %}
-																																<button id="showNext" style="display: block; margin: 20px auto;">Show next 4</button>
-												{% endif %}
-        {% endif %}
-    {% endfor %}
-</div>
-	</div>
-	<div class = "footer">
-		<a href="">Справка</a>
-		<a href="">Пользовательское соглашение</a>
-		<a href="">Партнёрам и организаторам мероприятий</a>
-		<a href="">Поддержка</a>
-		<a href="">Возврат билетов</a>
-	</div>
-	 <script src="{% static 'cinema/js/script2.js' %}"></script>
+
+        <div class="block4">
+            {% for event in events %}
+                {% if event.id %}
+                    <div class="block5" {% if loop.index > 4 %} style="display: none;" {% endif %}>
+                        <figure>
+                            <img src="{{ event.poster }}">
+                            <figcaption><a href="{% url 'event_detail1' event.id %}">{{ event.title }}</a></figcaption>
+                        </figure>
+                    </div>
+                {% endif %}
+
+                {% if loop.index == 4 %}
+                    <button id="showNext" style="display: block; margin: 20px auto;">Show next 4</button>
+                {% endif %}
+
+                {% if loop.index > 4 and loop.index % 4 == 0 %}
+                    <button id="showNext{{ loop.index }}" style="display: none; margin: 20px auto;">Show next 4</button>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="footer">
+        <a href="">Справка</a>
+        <a href="">Пользовательское соглашение</a>
+        <a href="">Партнёрам и организаторам мероприятий</a>
+        <a href="">Поддержка</a>
+        <a href="">Возврат билетов</a>
+    </div>
+    <script src="{% static 'cinema/js/script2.js' %}"></script>
 </body>
 </html>
