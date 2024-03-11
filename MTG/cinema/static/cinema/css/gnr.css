@@ -180,7 +180,7 @@ li{
 }
 
 .block5 figure figcaption {
-
+	word-wrap: break-word;
         margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: left;
