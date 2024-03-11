@@ -173,7 +173,8 @@ li{
 	margin-right: 7%;
 }
 .block5 figure img {
-       cursor: pointer;
+	border-radius: 10px;
+        cursor: pointer;
 	width: 320px;
 	height: 160px;
 }
