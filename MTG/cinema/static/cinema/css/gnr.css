@@ -173,14 +173,14 @@ li{
 	margin-right: 7%;
 }
 .block5 figure img {
-	border-radius: 10px;
+	border-radius: 15px;
         cursor: pointer;
 	width: 320px;
 	height: 160px;
 }
 
 .block5 figure figcaption {
-	height: 20px;
+
         margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: left;
