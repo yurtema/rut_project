@@ -64,20 +64,12 @@
         <div class="block4">
             {% for event in events %}
                 {% if event.id %}
-                    <div class="block5" {% if loop.index > 4 %} style="display: none;" {% endif %}>
+                    <div class="block5">
                         <figure>
-                            <img src="{{ event.poster }}">
+                            <img src="{{ event.first_images }}">
                             <figcaption><a href="{% url 'event_detail1' event.id %}">{{ event.title }}</a></figcaption>
                         </figure>
                     </div>
-                {% endif %}
-
-                {% if loop.index == 4 %}
-                    <button id="showNext" style="display: block; margin: 20px auto;">Show next 4</button>
-                {% endif %}
-
-                {% if loop.index > 4 and loop.index divisibleby 4 == 0 %}
-                    <button id="showNext{{ loop.index }}" style="display: none; margin: 20px auto;">Show next 4</button>
                 {% endif %}
             {% endfor %}
         </div>
