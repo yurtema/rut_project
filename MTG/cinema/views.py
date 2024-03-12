@@ -6,6 +6,7 @@ def events_catalog1(request):
     for event in events:
         if event.images:
             event.urls_list = event.images[1:-1]
+            event.new_name = event.title[:30]
             event.first_images = event.urls_list.strip("[]").split(", ")[0][1:-1]
     return render(request, "cinema/index.html", {"events": events})
 
