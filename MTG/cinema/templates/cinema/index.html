@@ -62,16 +62,21 @@
 
 
         <div class="block4">
-            {% for event in events %}
-                {% if event.id and event.first_images %}
-                    <div class="block5">
-                        <figure>
-                            <img src="{{ event.first_images }}">
-                            <figcaption><a href="{% url 'event_detail1' event.id %}">{{ event.new_name }}</a></figcaption>
-                        </figure>
-                    </div>
+        {% with number=0 %}
+        {% for event in events %}
+            {% if event.id and event.first_images %}
+                <div class="block5">
+                    <figure>
+                        <img src="{{ event.first_images }}">
+                        <figcaption><a href="{% url 'event_detail1' event.id %}">{{ event.title }}</a></figcaption>
+                    </figure>
+                </div>
+                {% if forloop.counter0|divisibleby:"4" %}
+                    <button id="loadMore">Load More</button>
                 {% endif %}
-            {% endfor %}
+            {% endif %}
+        {% endfor %}
+        {% endwith %}
         </div>
     </div>
     <div class="footer">
