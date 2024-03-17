@@ -181,6 +181,7 @@ li{
 }
 
 .block5 figure figcaption {
+	width:300px;
 	word-wrap: break-word;
         margin-top: 20px;
 	margin-bottom: 20px;
