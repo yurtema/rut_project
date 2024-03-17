@@ -9,7 +9,7 @@ body{
 	width: 100%;
 	height: 1000px;
 	overflow-x: hidden;
-	background-color: #f8ECEC;
+	background-color: red;
 }
 .header{
 	display: flex;
@@ -158,7 +158,6 @@ li{
         justify-content: space-between;
 }
 .block4 a{
-	word-wrap: break-word;
 	color: black;
 	cursor: pointer;
 }
@@ -181,8 +180,6 @@ li{
 }
 
 .block5 figure figcaption {
-	width:300px;
-	word-wrap: break-word;
         margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: left;
