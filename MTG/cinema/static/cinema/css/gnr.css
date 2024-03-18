@@ -158,7 +158,8 @@ li{
         justify-content: space-between;
 }
 .block4 a{
-	float: left;
+	word-wrap: break-word; 
+	white-space: pre-wrap; 
 	color: black;
 	cursor: pointer;
 }
