@@ -158,6 +158,7 @@ li{
         justify-content: space-between;
 }
 .block4 a{
+	float: left;
 	color: black;
 	cursor: pointer;
 }
