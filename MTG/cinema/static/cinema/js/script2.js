@@ -1,4 +1,3 @@
-
 // Переменная для отслеживания текущего индекса события
 let currentIndex = 0;
 
@@ -20,13 +19,16 @@ function loadEvents() {
     // Обновляем текущий индекс
     currentIndex = endIndex;
     
-    // Если достигнут конец списка событий, скрываем кнопку
-    if (currentIndex >= allEvents.length) {
+    // Показываем кнопку "Показать ещё", если есть ещё события для загрузки
+    if (currentIndex < allEvents.length) {
+        document.getElementById('loadMoreBtn').style.display = 'block';
+    } else {
+        // Если достигнут конец списка событий, скрываем кнопку
         document.getElementById('loadMoreBtn').style.display = 'none';
     }
 }
 
-// Обработчик события нажатия на кнопку "Загрузить еще"
+// Обработчик события нажатия на кнопку "Показать ещё"
 document.getElementById('loadMoreBtn').addEventListener('click', loadEvents);
 
 // Запускаем загрузку событий при загрузке страницы
