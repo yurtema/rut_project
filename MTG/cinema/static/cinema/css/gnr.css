@@ -78,7 +78,7 @@ h1{
 }
 #cal{
 	
-	background: rgba(251, 220, 192, 1);
+	background: #f2f2f2;
 }
 #cal:hover{
 	background-color: rgba(0, 0, 0, 0.4);
