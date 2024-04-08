@@ -77,13 +77,7 @@ h1{
 	cursor: text;
 }
 #cal{
-	margin-left: 80px;
-	cursor: pointer;
-	padding: 18px 30px;
-	color: black;
-	font-weight: 600;
-	font-size: 18px;
-	border-radius: 20px;
+	
 	background: rgba(251, 220, 192, 1);
 }
 #cal:hover{
