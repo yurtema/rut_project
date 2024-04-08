@@ -86,6 +86,20 @@ h1{
 	border-radius: 20px;
 	background: rgba(251, 220, 192, 1);
 }
+input[type="date"]{
+    background-color: #0080ff;
+    padding: 15px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-family: "Roboto Mono",monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
 }
 #cal:hover{
 	background-color: rgba(0, 0, 0, 0.4);
