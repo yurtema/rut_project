@@ -77,9 +77,14 @@ h1{
 	cursor: text;
 }
 #cal{
-	
-	background: #f2f2f2;
-	color: #000;
+	margin-left: 80px;
+	cursor: pointer;
+	padding: 18px 30px;
+	color: black;
+	font-weight: 600;
+	font-size: 18px;
+	border-radius: 20px;
+	background: rgba(251, 220, 192, 1);
 }
 #cal:hover{
 	background-color: rgba(0, 0, 0, 0.4);
