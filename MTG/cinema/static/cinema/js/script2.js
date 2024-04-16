@@ -1,21 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let loadButton = document.createElement('button');
-    loadButton.textContent = 'Загрузить еще';
-    loadButton.classList.add('load-button');
-    document.body.appendChild(loadButton);
-    
-    loadButton.addEventListener('click', function() {
-        let blocksToLoad = document.querySelectorAll('.block5');
-
-        for (let i = 0; i < 4; i++) {
-            let block = blocksToLoad[number];
-            if (block) {
-                block.style.display = 'block';
-            } else {
-                loadButton.style.display = 'none';
-                break;
-            }
-            number++;
+ window.onload = function () {
+        var box=document.getElementsByClassName('box');
+        var btn=document.getElementById('button');
+        for (let i=10;i<box.length;i++) {
+            box[i].style.display = "none";
         }
-    });
-});
+
+        var countD = 10;
+        btn.addEventListener("click", function() {
+            var box=document.getElementsByClassName('box');
+            countD += 10;
+            if (countD <= box.length){
+                for(let i=0;i<countD;i++){
+                    box[i].style.display = "block";
+                }
+            }
+
+        })
+    }
