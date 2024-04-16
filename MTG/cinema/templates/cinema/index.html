@@ -73,8 +73,8 @@
                         <figcaption><a href="{% url 'event_detail1' event.id %}">{{ event.title }}</a></figcaption>
                     </figure>
                 </div>
+		<button id="button">Показать еще</button>
                 {% if forloop.counter0|divisibleby:"4" %}
-                    <button id="button">Показать еще</button>
                 {% endif %}
             {% endif %}
         {% endfor %}
