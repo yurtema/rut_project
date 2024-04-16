@@ -243,3 +243,13 @@ figure {
 	color: black ;
 	padding: 8px 15px;
 }
+button {
+        width: 78%;
+        line-height: 40px;
+        background-color: orange;
+        border: 4px solid #fff;
+        color: #fff;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
