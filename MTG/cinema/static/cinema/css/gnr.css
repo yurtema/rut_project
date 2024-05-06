@@ -251,10 +251,6 @@ figure {
 	text-align: center;
 }
 
-.products-grid__item:nth-child(n + 7) {
+.block5:nth-child(n + 4) {
 	display: none;
-}
-
-.products-grid__item.is-visible {
-	display: block;
 }
