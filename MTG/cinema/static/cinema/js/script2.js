@@ -1,19 +1,15 @@
- window.onload = function () {
-        var box=document.getElementsByClassName('box');
-        var btn=document.getElementById('button');
-        for (let i=10;i<box.length;i++) {
-            box[i].style.display = "none";
-        }
+const showMore = document.querySelector('.show-more');
+const productsLength = document.querySelectorAll('.block5').length;
+let items = 4;
 
-        var countD = 10;
-        btn.addEventListener("click", function() {
-            var box=document.getElementsByClassName('box');
-            countD += 10;
-            if (countD <= box.length){
-                for(let i=0;i<countD;i++){
-                    box[i].style.display = "block";
-                }
-            }
+showMore.addEventListener('click', () => {
+	items += 4;
+	const array = Array.from(document.querySelector('.block5').children);
+	const visItems = array.slice(0, items);
 
-        })
-    }
+	visItems.forEach(el => el.classList.add('is-visible'));
+
+	if (visItems.length === productsLength) {
+		showMore.style.display = 'none';
+	}
+});
