@@ -246,13 +246,15 @@ figure {
 	color: black ;
 	padding: 8px 15px;
 }
-.button {
-        width: 78%;
-        line-height: 40px;
-        background-color: orange;
-        border: 4px solid #fff;
-        color: #fff;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.btn-center {
+	grid-column: 2 / 4 span;
+	text-align: center;
+}
+
+.products-grid__item:nth-child(n + 7) {
+	display: none;
+}
+
+.products-grid__item.is-visible {
+	display: block;
+}
