@@ -76,6 +76,9 @@ h1{
 	color: grey;
 	cursor: text;
 }
+input{
+	background-color: rgba(251, 220, 192, 1);
+}
 #cal{
 	margin-left: 80px;
 	cursor: pointer;
