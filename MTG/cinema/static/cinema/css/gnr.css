@@ -251,6 +251,6 @@ figure {
 	text-align: center;
 }
 
-.block5:nth-child(n + 5) {
+figure:nth-child(n + 5) {
 	display: none;
 }
