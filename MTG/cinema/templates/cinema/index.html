@@ -74,7 +74,9 @@
                     </figure>
                 </div>
                 {% if forloop.counter0|divisibleby:"4" %}
-		<button class="button">Показать еще</button>
+		 <div class="btn-center">
+        <button class="show-more">Показать еще</button>
+      </div>
                 {% endif %}
             {% endif %}
         {% endfor %}
