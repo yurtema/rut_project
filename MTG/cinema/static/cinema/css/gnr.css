@@ -51,10 +51,10 @@ h1{
 .block2{
 	position: static;
 	width: 100%;
-	margin-left: 155px;
+	margin-left: 11%;
 	display: flex;
 	align-items: center;
-	margin-top: 80px;
+	margin-top: 4%;
 	position: static;
 }
 .logo{
@@ -67,7 +67,7 @@ h1{
 	display: flex;
 	align-items: center;
 	border-radius: 30px;
-	margin-left: 260px;
+	margin-left: 17%;
 }
 .lupa{
 	padding-left: 2%;
@@ -76,11 +76,8 @@ h1{
 	color: grey;
 	cursor: text;
 }
-input{
-	background-color: rgba(251, 220, 192, 1);
-}
 #cal{
-	margin-left: 80px;
+	margin-left: 4%;
 	cursor: pointer;
 	padding: 18px 30px;
 	color: black;
@@ -89,7 +86,6 @@ input{
 	border-radius: 20px;
 	background: rgba(251, 220, 192, 1);
 }
-
 #cal:hover{
 	background-color: rgba(0, 0, 0, 0.4);
 	transition: 0.3s;
@@ -98,13 +94,13 @@ input{
 .block3{
 	margin-left: 2.5%;
 	display: flex;
-	margin-top: 75px;
-	margin-left: 35px;
+	margin-top: 4%;
+	margin-left: 2.5%;
 	position: static;
 }
 .menu{
 	text-align: center;
-	width:320px;
+	min-width: 23%;
 	background: rgba(238, 227, 227, 1);
 	border-radius: 30px;
 	z-index:100;
@@ -151,54 +147,49 @@ li{
 	cursor: pointer;
 	transition: 0.3s;
 }
-.block4 {
-	position: absolute;
+.block4{
+	align-items: center;
 	background: rgba(238, 227, 227, 1);
 	border-radius: 20px;
-	margin-left: 400px;
-	width: 950px;
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+	height: 550px;
+	width: 900px;
+	margin-left: 450px;
+	position: absolute;
 }
-.block4 a{
-	word-wrap: break-word; 
-	white-space: pre-wrap; 
-	color: black;
+.block4 img{
 	cursor: pointer;
+	width: 320px;
+	height: 100px;
 }
 .block4 a:hover{
 	color: black;
 	cursor: pointer;
 	border-bottom: 2px dashed black;
 }
-.block5 {
-        margin-bottom: 0%;
-	margin-top: 3%;
-	margin-left: 7%;
-	margin-right: 7%;
-}
-figure {
+
+.product{
+	padding-left: 9.5%;
+	margin-top: 2%;
   float: left;
   width: 320px;
 }
-.block5 figure img {
-	border-radius: 15px;
-        cursor: pointer;
-	width: 320px;
-	height: 160px;
+.product:nth-child(n + 5) {
+	display: none;
 }
 
-.block5 figure figcaption {
-        margin-top: 20px;
+.product {
+	display: block;
+}
+.block4 a{
+	text-align: center;
+  	display: inline-block;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: left;
 	font-size: 15px;
 	font-weight: 400;
-}
-.block6{
-	padding-top: 20px;
-	padding-right: 100px;
+	color: black;
+	cursor: pointer;
 }
 .footer{
 	display: flex;
@@ -247,10 +238,7 @@ figure {
 	padding: 8px 15px;
 }
 .btn-center {
-	grid-column: 2 / 4 span;
+	padding-top: 55%;
+	cursor: pointer;
 	text-align: center;
-}
-
-figure:nth-child(n + 5) {
-	display: none;
 }
