@@ -70,7 +70,7 @@
             {% if event.id and event.first_images %}
                <li class="products-grid__item">
                         <img src="{{ event.first_images }}">
-                       <a href="{% url 'event_detail1' event.id %}">
+                       <a href="{% url 'event_detail1' event.id %}">{{ event.title }}
                        </a>
                 </li>
                 {% if forloop.counter0|divisibleby:"4" %}
