@@ -167,11 +167,12 @@ li{
 }
 
 .products-grid{
-	grid-column: 2 span;
 	display: grid;
-	grid-gap: var(--gutter);
-	grid-template-columns: repeat(2, 1fr);
-	text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px 80px;
+	margin-top: 3%;
+	margin-left: 10%;
+	width: 320px;
 }
 .products-grid__item:nth-child(n + 5) {
 	display: none;
