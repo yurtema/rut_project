@@ -63,16 +63,20 @@
         </div>
 
 
-        <div class="block4">
-		<ul class="products-grid">
+         <div class="block4">
         {% with number=0 %}
         {% for event in events %}
             {% if event.id and event.first_images %}
-               <li class="products-grid__item">
+               <ul class="products-grid">
+		       <li class="products-grid__item">
                         <img src="{{ event.first_images }}">
-                       <a href="{% url 'event_detail1' event.id %}">{{ event.title }}
-                       </a>
-                </li>
+                        <a href="{% url 'event_detail1' event.id %}">{{ event.title }}</a>
+		       </li>
+	       </ul>
+		<div class="btn-center">
+        <button class="show-more">Показать еще</button>
+      </div>
+                </div>
                 {% if forloop.counter0|divisibleby:"4" %}
 		
                 {% endif %}
@@ -80,7 +84,6 @@
         {% endfor %}
         {% endwith %}
         </div>
-    </div>
     <div class="footer">
         <a href="">Справка</a>
         <a href="">Пользовательское соглашение</a>
