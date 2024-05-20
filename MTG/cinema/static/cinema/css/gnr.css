@@ -158,7 +158,7 @@ li{
 .block4 img{
 	cursor: pointer;
 	width: 320px;
-	height: 100px;
+	height: 160px;
 }
 .block4 a:hover{
 	color: black;
@@ -239,7 +239,7 @@ li{
 	padding: 8px 15px;
 }
 .btn-center {
-	padding-bottom: 5%;
+	padding-top: 4%;
 	cursor: pointer;
 	text-align: center;
 }
