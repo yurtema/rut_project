@@ -1,10 +1,10 @@
 const showMore = document.querySelector('.show-more');
-const productsLength = document.querySelectorAll('.block5').length;
+const productsLength = document.querySelectorAll('.products-grid__item').length;
 let items = 4;
 
 showMore.addEventListener('click', () => {
 	items += 4;
-	const array = Array.from(document.querySelector('.block5').children);
+	const array = Array.from(document.querySelector('.products-grid').children);
 	const visItems = array.slice(0, items);
 
 	visItems.forEach(el => el.classList.add('is-visible'));
